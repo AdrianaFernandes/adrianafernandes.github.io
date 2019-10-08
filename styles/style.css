@@ -1,6 +1,5 @@
 .bg-roxo {
     background-color: #7e459b;
-    
 }
 
 nav a:hover {
@@ -25,4 +24,31 @@ nav a:hover {
 
 .redes_sociais i {
     color: #7e459b !important;
+    font-size: 1.2rem;
+}
+
+.hab_roxo {
+    background-color: #7e459b;
+}
+
+.habilidade i{
+    font-size: 1.8rem;
+}
+
+.tamanho-card {
+    width: 18rem;
+}
+
+.imagem-cards {
+    object-fit: cover;
+    object-position: top;
+    height: 40vh;
+}
+
+footer a:visited {
+    color: #b070f0;
+}
+
+footer a:hover {
+    text-decoration: none; 
 }

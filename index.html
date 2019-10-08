@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="#">Sobre</a>
+                        <a class="nav-link text-white" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Habilidades</a>
+                        <a class="nav-link text-white" href="#habilidades">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Projetos</a>
+                        <a class="nav-link text-white" href="#portfolio">Portfólio</a>
                     </li>
                 </ul>
                 <!-- <li class="nav-item">
@@ -52,18 +52,7 @@
 
     <!-- header -->
     <header>
-        <!-- carousel -->
-        <!-- <section> -->
-        <!-- <img src="./assets/images/sample-photo-01.jpg" alt="">
-            <img src="./assets/images/sample-photo-02.jpg" alt="">
-            <img src="./assets/images/sample-photo-03.jpg" alt=""> -->
-
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
-            <!-- <ol class="carousel-indicators>
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol> -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100 imagem_carousel" src="./assets/images/sample-photo-07.jpg"
@@ -95,17 +84,17 @@
             <div class="container text-center ">
                 <h1>Adriana Fernandes Dorigão</h1>
                 <h2 class="font-italic font-weight-light">Desenvolvedora front-end</h2>
-                <div class="d-flex justify-content-around redes_sociais">
+                <div class="d-flex flex-column flex-lg-row justify-content-around redes_sociais">
                     <a href="https://github.com/AdrianaFernandes" target="_blank">
-                        <i class="fab fa-github-alt"></i>
+                        <i class="fab fa-github-alt mr-3"></i>
                         <span class="">github.com/AdrianaFernandes</span>
                     </a>
                     <a href="https://www.linkedin.com/in/fernandesadriana/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin mr-3"></i>
                         <span class="">linkedin.com/fernandesadriana</span>
                     </a>
                     <a href="" target="_blank">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope mr-3"></i>
                         <span class="">adrianafernandes.af@gmail.com</span>
                     </a>
                 </div>
@@ -114,47 +103,62 @@
     </header>
 
     <!-- seções - habilidades e sobre -->
-    <section>
-        <h3>Habilidades</h3>
-        <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
-        </div>
-        <div>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS</p>
-        </div>
-        <div>
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
-        </div>
-        <div>
-            <i class="fab fa-sass"></i>
-            <p>Sass</p>
-        </div>
-        <div>
-            <i class="fas fa-book"></i>
-            <p>jQuery</p>
-        </div>
-        <div>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-        </div>
-        <div>
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-        </div>
-        <div>
-            <i class="fab fa-git-alt"></i>
-            <p>Git</p>
-        </div>
-        <div>
-            <i class="fas fa-tasks"></i>
-            <p>Scrum</p>
-        </div>
+    <section class="text-white d-lg-flex bg-roxo py-4 ">
 
-        <section>
-            <h3>Sobre</h3>
+        <section class="text-center container ">
+
+            <h3 id="habilidades">Habilidades</h3>
+
+            <div class="text-center d-flex row align-items-center habilidade">
+
+                <div class="col">
+                    <i class="fab fa-html5 "></i>
+                    <p>HTML</p>
+                </div>
+                <div class=" col">
+                    <i class="fab fa-css3-alt "></i>
+                    <p>CSS</p>
+                </div>
+                <div class=" col">
+                    <i class="fab fa-js "></i>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <i class="fab fa-sass "></i>
+                    <p>Sass</p>
+                </div>
+                <div class="col">
+                    <i class="fas fa-book "></i>
+                    <p>jQuery</p>
+                </div>
+                <div class="col">
+                    <i class="fab fa-react "></i>
+                    <p>React</p>
+                </div>
+
+                <div class="w-100"></div>
+
+                <div class="col">
+                    <i class="fab fa-bootstrap col-sm"></i>
+                    <p>Bootstrap</p>
+                </div>
+                <div class="col">
+                    <i class="fab fa-git-alt col-sm"></i>
+                    <p>Git</p>
+                </div>
+                <div class="col">
+                    <i class="fas fa-tasks col-sm"></i>
+                    <p>Scrum</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="text-center ">
+            <h3 id="sobre">Sobre</h3>
             <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
                 magni asperiores? <span>Impedit qui saepe necessitatibus exercitationem </span> Impedit qui saepe
@@ -164,17 +168,117 @@
     </section>
 
     <!-- cards - meus projetos -->
-    <section>
-        <h3>Portfólio</h3>
-        <!-- cards -->
-        <!-- modais -->
-        <img src="./assets/images/modal-01.jpg" alt="">
-        <img src="./assets/images/modal-02.jpg" alt="">
-        <img src="./assets/images/modal-03.jpg" alt="">
+    <section class="text-center py-4">
+        <div class="container">
+            <h3 id="portfolio">Portfólio</h3>
+
+            <!-- cards -->
+
+            <div class="row justify-content-center py-4">
+                <!-- cards1 -->
+                <div class="card tamanho-card">
+                    <img class="card-img-top imagem-cards" src="./assets/images/modal-01.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                            preencher o
+                            conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal01" >Visitar</a>
+                    </div>
+                </div>
+                <!-- modais 01 -->
+                <div class="modal" tabindex="-1" role="dialog" id="modal01">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título do modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Texto do corpo do modal, é aqui.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cards2 -->
+                <div class="card tamanho-card">
+                    <img class="card-img-top imagem-cards" src="./assets/images/modal-02.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                            preencher o
+                            conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal02">Visitar</a>
+                    </div>
+                </div>
+                <!-- modais 02-->
+                <div class="modal" tabindex="-1" role="dialog" id="modal02">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título do modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Texto do corpo do modal, é aqui.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cards3 -->
+                <div class="card tamanho-card">
+                    <img class="card-img-top imagem-cards" src="./assets/images/modal-03.png"
+                        alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do card</h5>
+                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                            preencher o
+                            conteúdo do card.</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal03">Visitar</a>
+                    </div>
+                    <!-- modais 03-->
+                    <div class="modal" tabindex="-1" role="dialog" id="modal03">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Título do modal</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Texto do corpo do modal, é aqui.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- footer -->
-    <footer>
+    <footer class="text-center text-white bg-roxo">
         <small>Desenvolvido com Bootstrap por Nome enquanto aluna da<span><a href="http://reprograma.com.br/index.html"
                     target="_blank">{reprograma}</a></span> 2019</small>
     </footer>
