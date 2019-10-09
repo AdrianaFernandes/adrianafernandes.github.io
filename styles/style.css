@@ -59,3 +59,7 @@ footer a:hover {
     text-decoration: none; 
 }
 
+.btn {
+    background-color: #7e459b;
+    border: none;
+}
