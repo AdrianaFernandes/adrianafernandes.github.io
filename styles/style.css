@@ -14,7 +14,7 @@ nav a:hover {
 }
 
 .redes_sociais span {
-    color:black
+    color:black;
 }
 
 .redes_sociais a:hover {
@@ -45,6 +45,12 @@ nav a:hover {
     height: 40vh;
 }
 
+.modal-cards {
+    object-fit: cover;
+    object-position: top;
+    height: 100vh;
+}
+
 footer a:visited {
     color: #b070f0;
 }
@@ -52,3 +58,4 @@ footer a:visited {
 footer a:hover {
     text-decoration: none; 
 }
+

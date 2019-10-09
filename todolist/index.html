@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>projeto2-todolist</title>
+</head>
+
+<body>
+  <!-- Fazer uma div mãe com "container" -->
+  <div class="container">
+    <form action="">
+      <div class="titulo">
+        <h1>Adicione uma nova tarefa</h1>
+      </div>
+      <!-- implementar um formulário de tarefas, para receber um valor -->
+      <div id="formularioDetarefas">
+        <form action="">
+          <input type="text" id="novaTarefa" placeholder="Informe Nova Tarefa">
+          <input type="text" id="novaCategoria" placeholder="Informe Categoria">
+      </div>
+
+      <div>
+        <button id="ativaBotao" class="botao">Adicionar</button>
+        <p class="meu-erro"></p>
+      </div>
+      <!-- Evento para receber o valor do formulário pelo usuário -->
+      <div id="lista" draggable="true"> 
+      </div>
+      <div id="bnt">
+
+        <button class="bnt1">Selecionar Tudo</button>
+
+        <button class="bnt2">Excluir Todos</button>
+
+        <button class="bnt3"> Remover Completos </button>
+
+      </div>
+
+    </form>
+    
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

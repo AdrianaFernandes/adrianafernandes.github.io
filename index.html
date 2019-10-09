@@ -34,25 +34,13 @@
                         <a class="nav-link text-white" href="#portfolio">Portfólio</a>
                     </li>
                 </ul>
-                <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
-            </li> -->
             </div>
         </div>
     </nav>
 
-    <!-- <nav>
-        <!-- <img src="" alt=""> -->
-    <!-- <ul>
-        <li>Habilidades</li>
-        <li>Sobre</li>
-        <li>Projetos</li>
-    </ul>
-    </nav> -->
-
     <!-- header -->
     <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100 imagem_carousel" src="./assets/images/sample-photo-07.jpg"
@@ -67,15 +55,14 @@
                         alt="Terceiro Slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Anterior</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Próximo</span>
             </a>
-
         </div>
 
         <!-- contato -->
@@ -93,7 +80,7 @@
                         <i class="fab fa-linkedin mr-3"></i>
                         <span class="">linkedin.com/fernandesadriana</span>
                     </a>
-                    <a href="" target="_blank">
+                    <a href="mailto:adrianafernandes.af@gmail.com" target="_blank">
                         <i class="fas fa-envelope mr-3"></i>
                         <span class="">adrianafernandes.af@gmail.com</span>
                     </a>
@@ -103,13 +90,13 @@
     </header>
 
     <!-- seções - habilidades e sobre -->
-    <section class="text-white d-lg-flex bg-roxo py-4 ">
+    <section class="text-white d-flex flex-column flex-lg-row bg-roxo py-4 ">
 
-        <section class="text-center container ">
+        <section class="text-center container align-items-center ">
 
             <h3 id="habilidades">Habilidades</h3>
 
-            <div class="text-center d-flex row align-items-center habilidade">
+            <div class="text-center habilidade row">
 
                 <div class="col">
                     <i class="fab fa-html5 "></i>
@@ -157,7 +144,7 @@
             </div>
         </section>
 
-        <section class="text-center ">
+        <section class="text-center align-items-center">
             <h3 id="sobre">Sobre</h3>
             <p>Aluna do <span>bootcamp de front-end</span> da {reprograma}.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit facere ea aperiam modi
@@ -174,17 +161,15 @@
 
             <!-- cards -->
 
-            <div class="row justify-content-center py-4">
+            <div class="row justify-content-around py-4">
                 <!-- cards1 -->
                 <div class="card tamanho-card">
-                    <img class="card-img-top imagem-cards" src="./assets/images/modal-01.png"
+                    <img class="card-img-top imagem-cards" src="./assets/images/projeto.png"
                         alt="Imagem de capa do card">
                     <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o
-                            conteúdo do card.</p>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal01" >Visitar</a>
+                        <h5 class="card-title">Moon Viagens</h5>
+                        <p class="card-text">Agosto/2019</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal01">Visitar</a>
                     </div>
                 </div>
                 <!-- modais 01 -->
@@ -192,17 +177,19 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Título do modal</h5>
+                                <h5 class="modal-title">Moon Viagens</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-                                <p>Texto do corpo do modal, é aqui.</p>
+                            <div class="modal-body ">
+                                <p>Moon Viagens</p>
+                                <img class="card-img-top modal-cards" src="./assets/images/projeto.png"
+                                    alt="Imagem de capa do card">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                                <button type="button" class="btn btn-primary">Visitar Site</button>
                             </div>
                         </div>
                     </div>
@@ -210,13 +197,11 @@
 
                 <!-- cards2 -->
                 <div class="card tamanho-card">
-                    <img class="card-img-top imagem-cards" src="./assets/images/modal-02.png"
+                    <img class="card-img-top imagem-cards" src="./assets/images/projeto3.png"
                         alt="Imagem de capa do card">
                     <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o
-                            conteúdo do card.</p>
+                        <h5 class="card-title">M de Maravilhosas</h5>
+                        <p class="card-text">Setembro/2019</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal02">Visitar</a>
                     </div>
                 </div>
@@ -225,17 +210,19 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Título do modal</h5>
+                                <h5 class="modal-title">M de Maravilhosas</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Texto do corpo do modal, é aqui.</p>
+                                <p>M de Maravilhosas</p>
+                                <img class="card-img-top modal-cards" src="./assets/images/projeto2.png"
+                                    alt="Imagem de capa do card">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                                <button type="button" class="btn btn-primary">Visitar Site</button>
                             </div>
                         </div>
                     </div>
@@ -243,13 +230,11 @@
 
                 <!-- cards3 -->
                 <div class="card tamanho-card">
-                    <img class="card-img-top imagem-cards" src="./assets/images/modal-03.png"
+                    <img class="card-img-top imagem-cards" src="./assets/images/projeto2.png"
                         alt="Imagem de capa do card">
                     <div class="card-body">
-                        <h5 class="card-title">Título do card</h5>
-                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
-                            preencher o
-                            conteúdo do card.</p>
+                        <h5 class="card-title">Lista de Tarefas</h5>
+                        <p class="card-text">Outubro/2019</p>
                         <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal03">Visitar</a>
                     </div>
                     <!-- modais 03-->
@@ -257,17 +242,19 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Título do modal</h5>
+                                    <h5 class="modal-title">Lista de Tarefas</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Texto do corpo do modal, é aqui.</p>
+                                    <p>Lista de Tarefas</p>
+                                    <img class="card-img-top modal-cards" src="./assets/images/projeto3.png"
+                                        alt="Imagem de capa do card">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                                    <button type="button" class="btn btn-primary">Visitar Site</button>
                                 </div>
                             </div>
                         </div>
