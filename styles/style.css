@@ -6,12 +6,18 @@ nav a:hover {
     font-weight: 500 !important;
     
 }
-
-.imagem_carousel {
+.imagem-cards {
     object-fit: cover;
-    object-position: 0 85%;
-    height: 65vh;
+    object-position: top;
+    height: 40vh;
 }
+
+
+.next{
+    width: 40%;
+}
+
+
 
 .redes_sociais span {
     color:black;
@@ -39,12 +45,6 @@ nav a:hover {
     width: 18rem;
 }
 
-.imagem-cards {
-    object-fit: cover;
-    object-position: top;
-    height: 40vh;
-}
-
 .modal-cards {
     object-fit: cover;
     object-position: top;
@@ -62,4 +62,23 @@ footer a:hover {
 .btn {
     background-color: #7e459b;
     border: none;
+}
+
+@media (min-width: 769px) {
+    .imagem_carousel {
+        object-fit: cover;
+        object-position: 0 85%;
+        height: 65vh;
+    }
+
+    .prev1 {
+        margin-left: -150px;
+    }
+    
+    .prev2 {
+        margin-right: -150px;
+    }
+}
+/* @media (max-width: 500px) {
+    
 }
